@@ -1,8 +1,10 @@
 #Learning React-Redux
 # Getting Started with Create React App
 
-Clone the repo. Run: 
-## npm install
+Clone the repo. In the project directory run: 
+## `npm install`
+
+This command will install dependencies.
 
 
 In the project directory, you can run:

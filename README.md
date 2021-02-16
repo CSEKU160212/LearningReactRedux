@@ -3,7 +3,6 @@
 
 Clone the repo. In the project directory run: 
 ## `npm install`
-
 This command will install dependencies.
 
 

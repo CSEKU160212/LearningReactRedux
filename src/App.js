@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/views/Counter/Index';
+import Todo from './components/views/Todo/Index';
+import { Provider } from 'react-redux';
+import store from './components/redux/store'
+import './components/css/app.css';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Router>
+            <div className="div-nav">
+              <nav>
+                <span style={{padding:'10px', margin:'5px'}}><Link to="/" style={{textDecoration:'none', color:'white'}}>Counter App</Link></span>
+                <span style={{padding:'10px', margin:'5px'}}><Link to="/todo" style={{textDecoration:'none', color:'white'}}>Todo App</Link></span>
+              </nav>
+            </div>
+              <header className="App-header">
+                    {/* A <Switch> looks through its children <Route>s and
+                        renders the first one that matches the current URL. */}
+                    <Switch>
+                      <Route exact path="/">
+                        <Counter />
+                      </Route>
+                      <Route exact path="/todo">
+                        <Todo />
+                      </Route>
+                    </Switch>
+              </header>
+        </Router>
+      </div>
+    </Provider>
+    
   );
 }
 

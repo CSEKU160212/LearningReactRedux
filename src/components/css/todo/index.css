@@ -1,0 +1,29 @@
+.text-area {
+  padding: 20px;
+  margin: 10px;
+  height: 50px;
+  width: 450px;
+}
+
+.add-todo-button {
+  height: 40px;
+  width: 150px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.clear-todo-button {
+  height: 40px;
+  width: 150px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.error-msg {
+  color: red;
+  padding: 5px;
+}

@@ -37,7 +37,7 @@ function Index(props) {
             <textarea 
                 type='text'
                 className="text-area" 
-                placeholder="Enter Todo" 
+                placeholder="Enter Todo Title" 
                 value={data} 
                 onChange={
                     (e)=>{setData(e.target.value)

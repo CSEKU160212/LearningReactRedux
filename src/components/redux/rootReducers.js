@@ -4,6 +4,6 @@ import TodoReducers from './todo/todoReducers'
 
 const rootReducers = combineReducers({
     counter: CounterReducers,
-    todo: TodoReducers
+    todo: TodoReducers,
 })
 export default rootReducers;

@@ -1,6 +1,6 @@
 import './App.css';
-import Counter from './components/views/Counter/Index';
-import Todo from './components/views/Todo/Index';
+import CounterComponent from './components/views/Counter/Index';
+import TodoComponent from './components/views/Todo/Index';
 import { Provider } from 'react-redux';
 import store from './components/redux/store'
 import './components/css/app.css';
@@ -28,10 +28,10 @@ function App() {
                         renders the first one that matches the current URL. */}
                     <Switch>
                       <Route exact path="/">
-                        <Counter />
+                        <CounterComponent />
                       </Route>
                       <Route exact path="/todo">
-                        <Todo />
+                        <TodoComponent />
                       </Route>
                     </Switch>
               </header>

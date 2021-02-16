@@ -1,4 +1,4 @@
-#Learning React-Redux
+# Learning React-Redux
 # Getting Started with Create React App
 
 Clone the repo. In the project directory run: 
